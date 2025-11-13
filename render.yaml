@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: solo-leveling-backend
+    name: solo-leveling-backend-DSA
     env: python
     plan: free
     buildCommand: pip install -r requirements.txt
