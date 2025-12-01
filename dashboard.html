@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard - AlgoLearn</title>
+
+    <link rel="icon" type="image/png" href="images/Algolearn.png">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Small extra styles for My Courses controls -->
+    <style>
+        .course-controls {
+            margin: 2rem 0 1rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        .course-controls label {
+            font-size: 1.6rem;
+            color: #444;
+        }
+
+        .course-controls select {
+            padding: 1rem 1.5rem;
+            font-size: 1.6rem;
+            border: 0.1rem solid #0eb582;
+            background: #fff;
+            min-width: 18rem;
+        }
+
+        .course-hint {
+            font-size: 1.4rem;
+            color: #777;
+            margin-bottom: 1rem;
+        }
+
+        .subjects .box-container .box {
+            position: relative;
+        }
+
+        .course-remove-btn {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: #ff6b6b;
+            border: none;
+            border-radius: 50%;
+            width: 2.8rem;
+            height: 2.8rem;
+            font-size: 2rem;
+            line-height: 2.8rem;
+            text-align: center;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .course-remove-btn:hover {
+            background: #e63946;
+        }
+
+        .hidden {
+            display: none !important;
+        }
+    </style>
+</head>
+<body>
+   
+<!-- =========================
+     HEADER – SAME AS home.html + LOGOUT
+   ========================= -->
+<header class="header">
+
+   <section class="flex">
+
+      <a href="home.html" class="logo">
+         <img src="images/Algolearn.png" alt="AlgoLearn logo" style="height:70px; width:auto;">
+      </a>
+
+      <nav class="navbar">
+         <div id="close-navbar" class="fas fa-times"></div>
+
+         <a href="home.html">Home</a>
+         <a href="about.html">About</a>
+
+         <div class="dropdown">
+            <a href="courses.html" class="dropbtn">
+               Courses <i class="fas fa-chevron-down"></i>
+            </a>
+            <div class="dropdown-menu">
+               <a href="graphic-design.html">Graphic Design</a>
+               <a href="mathematics.html">Mathematics</a>
+               <a href="teaching.html">Teaching</a>
+               <a href="development.html">Development</a>
+               <a href="science.html">Science</a>
+               <a href="engineering.html">Engineering</a>
+               <a href="dsa.html">Data Structures &amp; Algorithms (DSA)</a>
+            </div>
+         </div>
+
+         <a href="contact.html">Contact</a>
+
+         <!-- ✅ LOGOUT ADDED -->
+         <a href="#" id="logout-btn">Logout</a>
+      </nav>
+
+      <div class="icons">
+         <span id="user-greeting" class="user-greeting"></span>
+         <div id="account-btn" class="fas fa-user"></div>
+         <div id="menu-btn" class="fas fa-bars"></div>
+      </div>
+
+   </section>
+
+</header>
+
+<!-- =========================
+     ACCOUNT FORM – SAME AS home.html
+   ========================= -->
+<div class="account-form">
+
+   <div id="close-form" class="fas fa-times"></div>
+
+   <div class="buttons">
+      <a href="login.html" class="btn">Login</a>
+      <a href="register.html" class="btn">Register</a>
+   </div>
+
+</div>
+
+<div class="heading-link">
+   <h3>Student Dashboard</h3>
+   <p><a href="home.html">Home</a> / <span>Dashboard</span></p>
+</div>
+
+<!-- =========================
+     MY COURSES – WITH ADD / REMOVE
+   ========================= -->
+<section class="subjects">
+
+   <h1 class="heading">My Courses</h1>
+
+   <!-- Controls for adding courses -->
+   <div class="course-controls">
+      <label for="course-select">Add course:</label>
+      <select id="course-select">
+         <option value="">-- choose a course --</option>
+         <option value="graphic-design">Graphic Design</option>
+         <option value="mathematics">Mathematics</option>
+         <option value="teaching">Teaching</option>
+         <option value="development">Development</option>
+         <option value="science">Science</option>
+         <option value="engineering">Engineering</option>
+         <option value="dsa">Data Structures &amp; Algorithms</option>
+      </select>
+      <button type="button" class="btn" id="add-course-btn">Add</button>
+   </div>
+
+   <p class="course-hint">Click the ✕ icon on a course card to remove it from your list. Use the dropdown to add it back.</p>
+
+   <div class="box-container" id="my-courses-container">
+
+      <a href="graphic-design.html">
+         <div class="box" data-course-id="graphic-design">
+            <button type="button" class="course-remove-btn">&times;</button>
+            <img src="images/subject-icon-1.png" alt="">
+            <h3>graphic design</h3>
+            <p>12 modules</p>
+         </div>
+      </a>
+
+      <a href="mathematics.html">
+         <div class="box" data-course-id="mathematics">
+            <button type="button" class="course-remove-btn">&times;</button>
+            <img src="images/subject-icon-2.png" alt="">
+            <h3>mathematics</h3>
+            <p>12 modules</p>
+         </div>
+      </a>
+
+      <a href="teaching.html">
+         <div class="box" data-course-id="teaching">
+            <button type="button" class="course-remove-btn">&times;</button>
+            <img src="images/subject-icon-3.png" alt="">
+            <h3>teaching</h3>
+            <p>12 modules</p>
+         </div>
+      </a>
+
+      <a href="development.html">
+         <div class="box" data-course-id="development">
+            <button type="button" class="course-remove-btn">&times;</button>
+            <img src="images/subject-icon-4.png" alt="">
+            <h3>development</h3>
+            <p>12 modules</p>
+         </div>
+      </a>
+
+      <a href="science.html">
+         <div class="box" data-course-id="science">
+            <button type="button" class="course-remove-btn">&times;</button>
+            <img src="images/subject-icon-5.png" alt="">
+            <h3>science</h3>
+            <p>12 modules</p>
+         </div>
+      </a>
+
+      <a href="engineering.html">
+         <div class="box" data-course-id="engineering">
+            <button type="button" class="course-remove-btn">&times;</button>
+            <img src="images/subject-icon-6.png" alt="">
+            <h3>engineering</h3>
+            <p>12 modules</p>
+         </div>
+      </a>
+
+      <a href="dsa.html">
+         <div class="box" data-course-id="dsa">
+            <button type="button" class="course-remove-btn">&times;</button>
+            <img src="images/subject-icon-7.png" alt="">
+            <h3>Data Structures & Algorithms</h3>
+            <p>15 modules</p>
+         </div>
+      </a>
+
+   </div>
+
+</section>
+
+<!-- footer section  -->
+
+<footer class="section-p1 footer-alt">
+   <div class="col">
+      <h4>Contact</h4>
+      <p><strong>Address:</strong> 805 TRU Way, Kamloops, BC V2C 0C8</p>
+      <p><strong>Phone:</strong> +1 (250) 123-4567</p>
+      <p><strong>Hours:</strong> 09:00 – 18:00, Mon – Fri</p>
+      <div class="follow">
+         <h4>Follow Us</h4>
+         <div class="icon">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-youtube"></i>
+         </div>
+      </div>
+   </div>
+
+   <div class="col">
+      <h4>About</h4>
+      <a href="about.html">About AlgoLearn</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms & Conditions</a>
+      <a href="contact.html">Contact Us</a>
+   </div>
+
+   <div class="col">
+      <h4>My Account</h4>
+      <a href="#">Sign In</a>
+      <a href="#">My Courses</a>
+      <a href="#">Help</a>
+   </div>
+
+   <div class="col install">
+      <h4>Install App</h4>
+      <p>From App Store or Google Play</p>
+      <div class="row">
+         <img src="images/app.jpg" alt="">
+         <img src="images/play.jpg" alt="">
+      </div>
+      <p>Secure Payments</p>
+      <img src="images/pay.png" alt="">
+   </div>
+
+<div class="copyright">
+   <img src="images/Algolearn.png" class="footer-logo">
+   <p>&copy; 2025 AlgoLearn. All rights reserved.</p>
+</div>
+
+</footer>
+
+<!-- swiper js link (if still used elsewhere) -->
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+
+
+<!-- =========================
+     SCRIPTS
+   ========================= -->
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script src="js/script.js"></script>
+
+<!-- ✅ LOGOUT OPENS LOGIN POPUP -->
+<script>
+document.getElementById("logout-btn").addEventListener("click", function(e) {
+    e.preventDefault();
+
+    document.querySelector(".account-form").classList.add("active");
+
+    document.querySelector(".login-form").classList.add("active");
+    document.querySelector(".register-form").classList.remove("active");
+
+    document.querySelector(".login-btn").classList.add("active");
+    document.querySelector(".register-btn").classList.remove("active");
+
+    window.scrollTo({ top: 0, behavior: "smooth" });
+});
+</script>
+
+<!-- ✅ ADD / REMOVE COURSES LOGIC (no storage, just page state) -->
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const container = document.getElementById('my-courses-container');
+    const select = document.getElementById('course-select');
+    const addBtn = document.getElementById('add-course-btn');
+
+    // Map course id -> box element
+    const courseBoxes = {};
+    container.querySelectorAll('.box[data-course-id]').forEach(box => {
+        const id = box.getAttribute('data-course-id');
+        courseBoxes[id] = box;
+
+        // Attach remove handler to button inside this box
+        const removeBtn = box.querySelector('.course-remove-btn');
+        if (removeBtn) {
+            removeBtn.addEventListener('click', function (e) {
+                e.preventDefault(); // stop link navigation
+                e.stopPropagation();
+                box.classList.add('hidden');
+            });
+        }
+    });
+
+    // Add course back (un-hide)
+    addBtn.addEventListener('click', function () {
+        const id = select.value;
+        if (!id) return;
+        const box = courseBoxes[id];
+        if (!box) return;
+        box.classList.remove('hidden');
+    });
+});
+</script>
+
+<!-- AUTH GUARD + LOGOUT HANDLER -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    // ✅ Redirect to login.html if user is NOT logged in
+    const isLoggedIn = localStorage.getItem("isLoggedIn") === "true";
+    if (!isLoggedIn) {
+        alert("Please login first.");
+        window.location.href = "login.html";
+        return; // stop running rest of the script
+    }
+
+    // ✅ Logout button logic
+    const logoutBtn = document.getElementById("logout-btn");
+    if (logoutBtn) {
+        logoutBtn.addEventListener("click", function (e) {
+            e.preventDefault();
+
+            // Clear login state
+            localStorage.removeItem("isLoggedIn");
+            localStorage.removeItem("loggedInUser");
+
+            // Show success message
+            alert("Logout has been done successfully");
+
+            // Redirect to login page
+            window.location.href = "login.html";
+        });
+    }
+});
+</script>
+
+
+</body>
+</html>
