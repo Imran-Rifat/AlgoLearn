@@ -1,8 +1,8 @@
-"""
+﻿"""
 Tests for chapters endpoint with dynamic OpenAI generation.
 """
 import json
-from unittest.mock import patch
+from unittest.mock import MagicMock, patch
 
 
 def test_chapters_endpoint_returns_200(client):
