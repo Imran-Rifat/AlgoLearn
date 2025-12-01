@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>AlgoLearn/Courses</title>
+   <link rel="icon" type="image/png" href="images/Algolearn.png">
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+   <!-- swiper css link  -->
+   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+   
+<!-- header section starts  -->
+<header class="header">
+
+   <section class="flex">
+
+         <a href="home.html" class="logo">
+            <img src="images/Algolearn.png" alt="AlgoLearn logo" style="height:70px; width:auto;">
+         </a>
+
+    <nav class="navbar">
+         <div id="close-navbar" class="fas fa-times"></div>
+
+         <a href="home.html">home</a>
+
+      <div class="dropdown">
+      <a href="courses.html" class="dropbtn">
+      courses <i class="fas fa-chevron-down"></i>
+      </a>
+      <div class="dropdown-menu">
+         <a href="graphic-design.html">Graphic Design</a>
+         <a href="mathematics.html">Mathematics</a>
+         <a href="arts&education.html">Arts & Education</a>
+         <a href="development.html">Development</a>
+         <a href="science.html">Science</a>
+         <a href="engineering.html">Engineering</a>
+         <a href="dsa.html">Data Structures & Algorithms (DSA)</a>
+         </div>
+      </div>
+
+         <a href="about.html">about</a>
+         <a href="contact.html">contact</a>
+
+    </nav>
+
+      <div class="icons">
+         <span id="user-greeting" class="user-greeting"></span>
+         <div id="account-btn" class="fas fa-user"></div>
+         <div id="menu-btn" class="fas fa-bars"></div>
+      </div>
+
+   </section>
+
+</header>
+<!-- header section ends -->
+
+
+<!-- account form section starts  -->
+
+<div class="account-form">
+
+   <div id="close-form" class="fas fa-times"></div>
+
+   <div class="buttons">
+      <span class="btn active login-btn">login</span>
+      <span class="btn register-btn">register</span>
+   </div>
+
+   <form class="login-form active" action="">
+      <h3>login now</h3>
+      <input type="email" placeholder="enter your email" class="box">
+      <input type="password" placeholder="enter your password" class="box">
+      <div class="flex">
+         <input type="checkbox" name="" id="remember-me">
+         <label for="remember-me">remember me</label>
+         <a href="#">forgot password?</a>
+      </div>
+      <input type="submit" value="login now" class="btn">
+   </form>
+
+   <form class="register-form" action="">
+      <h3>register now</h3>
+      <input type="email" placeholder="enter your email" class="box">
+      <input type="password" placeholder="enter your password" class="box">
+      <input type="password" placeholder="confirm your password" class="box">
+      <input type="submit" value="register now" class="btn">
+   </form>
+
+</div>
+<!-- account form section ends -->
+
+
+<div class="heading-link">
+   <h3>our courses</h3>
+   <p> <a href="home.html">home</a> / courses </p>
+</div>
+
+<section class="courses">
+
+   <div class="box-container">
+
+      <!-- 1. Graphic Design -->
+      <div class="box">
+         <div class="image">
+            <img src="images/course-2-1.jpg" alt="">
+            <h3>graphic design</h3>
+         </div>
+         <div class="content">
+            <h3>Create Stunning Visual Experiences</h3>
+            <p>Learn visual communication, typography, color theory, and modern design tools while building real projects for your portfolio.</p>
+            <a href="graphic-design.html" class="btn">read more</a>
+            <div class="icons">
+               <span> <i class="fas fa-book"></i> 12 modules </span>
+               <span> <i class="fas fa-clock"></i> 6 hours </span>
+            </div>
+         </div>
+      </div>
+
+      <!-- 2. Mathematics -->
+      <div class="box">
+         <div class="image">
+            <img src="images/course-2-2.jpg" alt="">
+            <h3>mathematics</h3>
+         </div>
+         <div class="content">
+            <h3>Build Logical Thinking & Problem-Solving Skills</h3>
+            <p>Strengthen your understanding of algebra, calculus, and geometry with step-by-step explanations and practice problems.</p>
+            <a href="mathematics.html" class="btn">read more</a>
+            <div class="icons">
+               <span> <i class="fas fa-book"></i> 12 modules </span>
+               <span> <i class="fas fa-clock"></i> 6 hours </span>
+            </div>
+         </div>
+      </div>
+
+      <!-- 3. Arts & Education -->
+      <div class="box">
+         <div class="image">
+            <img src="images/course-2-3.jpg" alt="">
+            <h3>arts & education</h3>
+         </div>
+         <div class="content">
+            <h3>Inspire Creativity & Knowledge</h3>
+            <p>Explore creative arts alongside modern educational practices to develop expression, communication skills, and effective learning techniques.</p>
+            <a href="arts-education.html" class="btn">read more</a>
+            <div class="icons">
+               <span> <i class="fas fa-book"></i> 12 modules </span>
+               <span> <i class="fas fa-clock"></i> 6 hours </span>
+            </div>
+         </div>
+      </div>
+
+      <!-- 4. Development -->
+      <div class="box">
+         <div class="image">
+            <img src="images/course-2-4.jpg" alt="">
+            <h3>development</h3>
+         </div>
+         <div class="content">
+            <h3>Turn Ideas into Real Applications</h3>
+            <p>Learn the foundations of web and software development with HTML, CSS, JavaScript, and backend basics through guided projects.</p>
+            <a href="development.html" class="btn">read more</a>
+            <div class="icons">
+               <span> <i class="fas fa-book"></i> 12 modules </span>
+               <span> <i class="fas fa-clock"></i> 6 hours </span>
+            </div>
+         </div>
+      </div>
+
+      <!-- 5. Science -->
+      <div class="box">
+         <div class="image">
+            <img src="images/course-2-5.jpg" alt="">
+            <h3>science</h3>
+         </div>
+         <div class="content">
+            <h3>Explore the Laws That Shape Our World</h3>
+            <p>Understand core ideas from physics, chemistry, and biology with clear explanations, experiments, and real-life examples.</p>
+            <a href="science.html" class="btn">read more</a>
+            <div class="icons">
+               <span> <i class="fas fa-book"></i> 12 modules </span>
+               <span> <i class="fas fa-clock"></i> 6 hours </span>
+            </div>
+         </div>
+      </div>
+
+      <!-- 6. Engineering (hidden initially) -->
+      <div class="box hide">
+         <div class="image">
+            <img src="images/course-2-6.jpg" alt="">
+            <h3>engineering</h3>
+         </div>
+         <div class="content">
+            <h3>Design, Build & Innovate the Future</h3>
+            <p>Learn the fundamentals of mechanical, electrical, and civil engineering through real-world case studies and problem-solving.</p>
+            <a href="engineering.html" class="btn">read more</a>
+            <div class="icons">
+               <span> <i class="fas fa-book"></i> 12 modules </span>
+               <span> <i class="fas fa-clock"></i> 6 hours </span>
+            </div>
+         </div>
+      </div>
+
+      <!-- 7. Data Structures & Algorithms (DSA) (hidden initially) -->
+      <div class="box hide">
+         <div class="image">
+            <img src="images/course-2-7.jpg" alt="">
+            <h3>data structures & algorithms (dsa)</h3>
+         </div>
+         <div class="content">
+            <h3>Master the Core of Competitive Programming</h3>
+            <p>Study key data structures, classic algorithms, and time complexity analysis to prepare for coding interviews and contests.</p>
+            <a href="dsa.html" class="btn">read more</a>
+            <div class="icons">
+               <span> <i class="fas fa-book"></i> 12 modules </span>
+               <span> <i class="fas fa-clock"></i> 6 hours </span>
+            </div>
+         </div>
+      </div>
+
+   </div>
+
+   <div class="load-more"> <div class="btn">load more</div> </div>
+
+</section>
+
+<!-- footer section  -->
+
+<footer class="section-p1 footer-alt">
+   <div class="col">
+      <h4>Contact</h4>
+      <p><strong>Address:</strong> 805 TRU Way, Kamloops, BC V2C 0C8</p>
+      <p><strong>Phone:</strong> +1 (250) 123-4567</p>
+      <p><strong>Hours:</strong> 09:00 – 18:00, Mon – Fri</p>
+      <div class="follow">
+         <h4>Follow Us</h4>
+         <div class="icon">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-youtube"></i>
+         </div>
+      </div>
+   </div>
+
+   <div class="col">
+      <h4>About</h4>
+      <a href="about.html">About AlgoLearn</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms & Conditions</a>
+      <a href="contact.html">Contact Us</a>
+   </div>
+
+   <div class="col">
+      <h4>My Account</h4>
+      <a href="#">Sign In</a>
+      <a href="#">My Courses</a>
+      <a href="#">Help</a>
+   </div>
+
+   <div class="col install">
+      <h4>Install App</h4>
+      <p>From App Store or Google Play</p>
+      <div class="row">
+         <img src="images/app-store.png" alt="">
+         <img src="images/google-play.png" alt="">
+      </div>
+      <p>Secure Payments</p>
+      <img src="images/pay.png" alt="">
+   </div>
+
+   <div class="copyright">
+      <p>&copy; 2025 AlgoLearn. All rights reserved.</p>
+   </div>
+   </footer>
+<!-- footer section ends -->
+
+<!-- swiper js link (if still used elsewhere) -->
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+<!-- Load More functionality -->
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+   const loadMoreBtn = document.querySelector('.courses .load-more .btn');
+   const hiddenBoxes = document.querySelectorAll('.courses .box.hide');
+   let currentIndex = 0;
+   const step = 3; // show 3 at a time
+
+   if (!loadMoreBtn) return;
+
+   loadMoreBtn.addEventListener('click', function () {
+      for (let i = 0; i < step; i++) {
+         if (currentIndex >= hiddenBoxes.length) {
+            loadMoreBtn.style.display = 'none';
+            break;
+         }
+         hiddenBoxes[currentIndex].classList.remove('hide');
+         currentIndex++;
+      }
+   });
+});
+</script>
+
+</body>
+</html>
