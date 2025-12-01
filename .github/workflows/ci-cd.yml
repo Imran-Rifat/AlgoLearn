@@ -1,0 +1,51 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  ci-build-and-test:
+    name: CI - Build and Test
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Show project files
+        run: |
+          echo "Listing project files..."
+          ls -R
+
+      - name: Run tests (simulated)
+        run: |
+          echo "✅ CI: Starting tests for AlgoLearn..."
+          echo "⚙️ Checking HTML, CSS, and JS (simulated)..."
+          echo "✅ All checks passed successfully!"
+
+      - name: Archive site files (artifact)
+        uses: actions/upload-artifact@v4
+        with:
+          name: algolearn-site
+          path: |
+            *.html
+            css/
+            js/
+
+  cd-deploy-simulated:
+    name: CD - Simulated Deploy
+    needs: ci-build-and-test
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Simulated deployment step
+        run: |
+          echo "🚀 CD: Starting simulated deployment..."
+          echo "📦 Using artifact 'algolearn-site' from CI job..."
+          echo "🌐 (Simulated) Deploying AlgoLearn to production server..."
+          echo "✅ Deployment successful! AlgoLearn is now live. (simulated)"
+
+
