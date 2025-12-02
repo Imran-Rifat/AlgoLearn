@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>AlgoLearn - Home</title>
+   <link rel="icon" type="image/png" href="images/Algolearn.png">
+
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+   <!-- swiper css link  -->
+   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+   
+<!-- header section starts  -->
+<header class="header">
+
+   <section class="flex">
+
+      <a href="home.html" class="logo">
+         <img src="images/Algolearn.png" alt="AlgoLearn logo" style="height:70px; width:auto;">
+      </a>
+
+      <nav class="navbar">
+         <div id="close-navbar" class="fas fa-times"></div>
+
+         <a href="home.html">home</a>
+
+      <div class="dropdown">
+      <a href="courses.html" class="dropbtn">
+      courses <i class="fas fa-chevron-down"></i>
+      </a>
+      <div class="dropdown-menu">
+         <a href="graphic-design.html">Graphic Design</a>
+         <a href="mathematics.html">Mathematics</a>
+         <a href="arts&education.html">Arts & Education</a>
+         <a href="development.html">Development</a>
+         <a href="science.html">Science</a>
+         <a href="engineering.html">Engineering</a>
+         <a href="dsa.html">Data Structures & Algorithms (DSA)</a>
+         </div>
+      </div>
+
+
+         <a href="about.html">about</a>
+         <a href="contact.html">contact</a>
+      </nav>
+<div class="icons">
+   <span id="user-greeting" class="user-greeting"></span>
+   <div id="account-btn" class="fas fa-user"></div>
+   <div id="menu-btn" class="fas fa-bars"></div>
+</div>
+
+<!-- =========================
+        ACCOUNT FORM
+========================= -->
+<div class="account-form">
+
+   <div id="close-form" class="fas fa-times"></div>
+
+   <div class="buttons">
+      <a href="login.html" class="btn">Login</a>
+      <a href="Signup.html" class="btn">Signup</a>
+   </div>
+
+</div>
+
+
+   </section>
+
+</header>
+
+
+
+
+
+<!-- home section starts  -->
+
+<div class="home">
+
+   <div class="swiper home-slider">
+      
+      <div class="swiper-wrapper">
+
+         <div class="swiper-slide slide" style="background: url(images/1.jpg) no-repeat;">
+            <section>
+               <div class="content">
+                  <h3>Learn Smarter — Learn with AlgoLearn</h3>
+                  <p>Master real-world skills with clear explanations, structured learning, and practical examples.</p>
+                  <a href="#" class="btn">get started</a>
+               </div>
+            </section>
+         </div>
+
+         <div class="swiper-slide slide" style="background: url(images/hero1.jpg) no-repeat;">
+            <section>
+               <div class="content">
+                  <h3>Build Your Coding Superpower</h3>
+                  <p>Learn programming step by step through projects, challenges, and interactive lessons.</p>
+                  <a href="#" class="btn">get started</a>
+               </div>
+            </section>
+         </div>
+
+         <div class="swiper-slide slide" style="background: url(images/hero4.jpg) no-repeat;">
+            <section>
+               <div class="content">
+                  <h3>Your Future in Tech Starts Here</h3>
+                  <p>Start learning today and unlock opportunities in software, AI, and beyond.</p>
+                  <a href="#" class="btn">get started</a>
+               </div>
+            </section>
+         </div>
+
+      </div>
+
+      <div class="swiper-pagination"></div>
+
+   </div>
+
+</div>
+
+<!-- home section ends -->
+
+<!-- subjects section starts  -->
+
+<section class="subjects">
+
+   <h1 class="heading">Courses</h1>
+
+   <div class="box-container">
+
+<a href="graphic-design.html">
+<div class="box">
+   <img src="images/graphic.png" alt="">
+   <h3>graphic design</h3>
+   <p>12 modules</p>
+</div>
+</a>
+
+
+<a href="mathematics.html">
+<div class="box">
+   <img src="images/math.png" alt="">
+   <h3>mathematics</h3>
+   <p>12 modules</p>
+</div>
+</a>
+
+
+<a href="arts&education.html">
+<div class="box">
+   <img src="images/prototype.png" alt="">
+   <h3>Arts & education</h3>
+   <p>12 modules</p>
+</div>
+</a>
+
+<a href="development.html">
+<div class="box">
+   <img src="images/growth.png" alt="">
+   <h3>development</h3>
+   <p>12 modules</p>
+</div>
+</a>
+
+
+<a href="science.html">
+<div class="box">
+   <img src="images/science.png" alt="">
+   <h3>science</h3>
+   <p>12 modules</p>
+</div>
+</a>
+
+<a href="engineering.html">
+<div class="box">
+   <img src="images/engineer.png" alt="">
+   <h3>engineering</h3>
+   <p>12 modules</p>
+</div>
+</a>
+<a href="dsa.html">
+<div class="box">
+   <img src="images/algorithm.png" alt="">
+   <h3>Data Structures & Algorithms</h3>
+   <p>15 modules</p>
+</div>
+</a>
+
+   </div>
+
+</section>
+
+<!-- subjects section ends -->
+
+<!-- home courses slider section starts  -->
+
+<section class="home-courses">
+
+   <h1 class="heading"> our popular courses </h1>
+
+
+   <!-- GRID instead of swiper -->
+<div class="courses-grid">
+
+   <!-- SLIDE 1 -->
+   <div class="slide">
+      <div class="image">
+         <img src="images/app-development.png" alt="">
+         <h3>Web Development</h3>
+      </div>
+
+      <div class="content">
+         <h3>Web Development</h3>
+         <p>Learn how modern websites are built using HTML, CSS, and JavaScript, and create responsive interactive pages from scratch.</p>
+
+         <a class="btn show-info" data-target="info1">read more</a>
+
+         <div id="info1" class="expand-info">
+            <p>
+               In this course you will learn:
+               <br>• HTML structure and semantic markup 
+               <br>• CSS styling, flexbox & grid layout 
+               <br>• Responsive design for all screen sizes
+               <br>• JavaScript interaction and DOM manipulation
+                 <br>• APIs & JSON basics
+                 <br>• Git and GitHub version control
+                 <br>• Deploying websites online
+
+
+            
+            </p>
+         </div>
+      </div>
+   </div>
+
+   <!-- SLIDE 2 -->
+   <div class="slide">
+      <div class="image">
+         <img src="images/file.png" alt="">
+         <h3>Python</h3>
+      </div>
+      <div class="content">
+         <h3>Python Programming</h3>
+         <p>Learn Python from scratch — from variables and loops to real-world problem solving, automation, and data processing.</p>
+
+         <a class="btn show-info" data-target="info2">read more</a>
+         <div id="info2" class="expand-info">
+            <p>
+              Python — Beginner to Intermediate
+You will learn:
+
+✔ Variables, data types & operators
+✔ Conditional logic & loops
+✔ Functions & modular programming
+✔ File handling & automation
+✔ Working with libraries
+✔ Building small real projects
+
+Python is one of the best languages for beginners and professionals.
+            </p>
+         </div>
+      </div>
+   </div>
+
+   <!-- SLIDE 3 -->
+   <div class="slide">
+      <div class="image">
+         <img src="images/java.png" alt="">
+         <h3>Java</h3>
+      </div>
+      <div class="content">
+         <h3>Java Programming</h3>
+         <p>Master Java fundamentals, object-oriented programming, and build real interactive applications.</p>
+
+         <a class="btn show-info" data-target="info3">read more</a>
+         <div id="info3" class="expand-info">
+            <p>
+            Java — Beginner to Intermediate
+
+You will learn:
+✔ Java syntax & structure
+✔ Object-Oriented Programming (OOP)
+✔ Classes, objects, methods
+✔ Arrays & collections
+✔ Exception handling
+✔ File input/output
+✔ Building real Java programs
+
+Java is widely used in Android apps, enterprise systems, and large-scale backend services.
+            </p>
+         </div>
+      </div>
+   </div>
+
+   <!-- SLIDE 4 -->
+   <div class="slide">
+      <div class="image">
+         <img src="images/linux.png" alt="">
+         <h3>Linux</h3>
+      </div>
+      <div class="content">
+         <h3>Linux Essential Skills</h3>
+         <p>Learn how to use Linux, command-line tools, file management, user controls, and system operations like a real system administrator.</p>
+
+         <a class="btn show-info" data-target="info4">read more</a>
+         <div id="info4" class="expand-info">
+            <p>
+            Linux — Beginner to Power User
+
+You will learn:
+✔ Terminal & shell navigation
+✔ File & directory management
+✔ User & permissions
+✔ Package installation & updates
+✔ Bash commands & scripting
+✔ System processes & monitoring
+
+Linux is a foundational skill for developers, IT engineers, cybersecurity experts, and DevOps professionals.
+            </p>
+         </div>
+      </div>
+   </div>
+
+   <!-- SLIDE 5 -->
+   <div class="slide">
+      <div class="image">
+         <img src="images/languages.png" alt="">
+         <h3>Language</h3>
+      </div>
+      <div class="content">
+         <h3>Language & Communication Skills</h3>
+         <p>Develop strong communication skills, improve vocabulary, learn proper pronunciation, and become confident in speaking and writing in real-world environments.</p>
+
+         <a class="btn show-info" data-target="info5">read more</a>
+         <div id="info5" class="expand-info">
+            <p>
+             This course helps you:
+✔ Improve spoken fluency
+✔ Strengthen grammar & vocabulary
+✔ Learn clear pronunciation
+✔ Understand tone & expression
+✔ Practice real conversation scenarios
+✔ Speak confidently in academic & professional settings
+            </p>
+         </div>
+      </div>
+   </div>
+
+   <!-- SLIDE 6 -->
+   <div class="slide">
+      <div class="image">
+         <img src="images/c-.png" alt="">
+         <h3>C++</h3>
+      </div>
+      <div class="content">
+         <h3>C++</h3>
+         <p>Learn C++ from basics to advanced — master memory management, object-oriented programming, pointers, data structures, and problem-solving needed for real-world software and system development.</p>
+
+         <a class="btn show-info" data-target="info6">read more</a>
+         <div id="info6" class="expand-info">
+            <p>
+              In this course you will learn:
+✔ C++ syntax & structure
+✔ Variables, loops & functions
+✔ OOP: classes, objects, inheritance, polymorphism
+✔ Memory management & pointers
+✔ Intro to data structures: arrays, linked lists, stacks
+✔ Building efficient algorithms
+            </p>
+         </div>
+      </div>
+   </div>
+
+</div> <!-- ✅ only ONE closing tag for courses-grid -->
+
+
+</section>
+
+
+</section>
+
+<!-- home courses slider section ends -->
+
+
+<!-- footer section  -->
+
+<footer class="section-p1 footer-alt">
+   <div class="col">
+      <h4>Contact</h4>
+      <p><strong>Address:</strong> 805 TRU Way, Kamloops, BC V2C 0C8</p>
+      <p><strong>Phone:</strong> +1 (250) 123-4567</p>
+      <p><strong>Hours:</strong> 09:00 – 18:00, Mon – Fri</p>
+      <div class="follow">
+         <h4>Follow Us</h4>
+         <div class="icon">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-youtube"></i>
+         </div>
+      </div>
+   </div>
+
+   <div class="col">
+      <h4>About</h4>
+      <a href="about.html">About AlgoLearn</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms & Conditions</a>
+      <a href="contact.html">Contact Us</a>
+   </div>
+
+   <div class="col">
+      <h4>My Account</h4>
+      <a href="#">Sign In</a>
+      <a href="#">My Courses</a>
+      <a href="#">Help</a>
+   </div>
+
+   <div class="col install">
+      <h4>Install App</h4>
+      <p>From App Store or Google Play</p>
+      <div class="row">
+         <img src="images/app.jpg" alt="">
+         <img src="images/play.jpg" alt="">
+      </div>
+      <p>Secure Payments</p>
+      <img src="images/pay.png" alt="">
+   </div>
+
+<div class="copyright">
+   <img src="images/Algolearn.png" class="footer-logo">
+   <p>&copy; 2025 AlgoLearn. All rights reserved.</p>
+</div>
+
+</footer>
+
+<!-- footer section ends -->
+
+<!-- TICKER START -->
+<div class="ticker-wrap">
+  <div class="ticker">
+    <span>📚 Learn industry-relevant skills with AlgoLearn • </span>
+    <span>🧠 Strengthen core problem-solving and logical reasoning • </span>
+    <span>💻 Gain real-world experience through hands-on exercises •</span>
+    <span>🔍 Explore structured learning paths in multiple disciplines • </span>
+    <span>📈 Build strong fundamentals for university & career success • </span>
+    <span>🎓 Develop analytical and technical thinking for the future •</span>
+    <span>📘 Access curated educational content and guided tutorials •</span>
+    <span>⚙️ Master mathematical logic, algorithms, and computation •</span>
+    <span>📑 Learn step-by-step with clarity and conceptual depth •</span>
+    <span>🔬 Expand knowledge through academic and applied learning •</span>
+    <span>🔗 Connect concepts across programming, math, and systems •</span>
+    <span>🧾 Build a solid academic & technical foundation with AlgoLearn •</span>
+  </div>
+</div>
+<!-- TICKER END -->
+
+<!-- swiper js link  -->
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
